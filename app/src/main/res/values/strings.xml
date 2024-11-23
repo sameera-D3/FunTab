@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="heading">Learn Multiplication Tables</string>
+    <string name="select">Select Table:</string>
+    <string name="showtx">See Table</string>
+    <string name="startquize">Start Quiz</string>
+    <string name="moreoption">Table</string>
+    <string name="speak">Speak Table</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="tables_array">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+            <item>11</item>
+            <item>12</item>
+            <item>13</item>
+            <item>14</item>
+            <item>15</item>
+            <item>16</item>
+            <item>17</item>
+            <item>18</item>
+            <item>19</item>
+            <item>20</item>
+        </string-array>
+
+
+</resources>

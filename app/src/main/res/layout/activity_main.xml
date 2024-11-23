@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">  <!-- Set the gradient background -->
+
+    <!-- App Title -->
+    <ImageView
+        android:id="@+id/cloud1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="191dp"
+        android:layout_height="184dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/happy" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/heading"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/dark_blue" />
+
+    <!-- Select Table Spinner -->
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_tables"
+            android:layout_width="213dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            android:entries="@array/tables_array"
+            android:fontFamily="serif"
+            android:scrollbarSize="12sp" />
+    </LinearLayout>
+
+    <!-- Speak Table Button -->
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Start Quiz Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_speak_table"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="@string/speak"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/showtxt"
+            android:layout_width="149dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="@string/showtx"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Start Quiz Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startquize"
+        android:fontFamily="serif"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:background="#2196F3"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:padding="12dp" />
+
+    <!-- Footer (Cute Text for Motivation) -->
+    <TextView
+        android:layout_width="396dp"
+        android:id="@+id/txt1"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/moreoption"
+        android:textColor="@color/dark_blue"
+        android:textSize="35sp" />
+
+</LinearLayout>
